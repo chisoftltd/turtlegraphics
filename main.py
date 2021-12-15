@@ -11,19 +11,20 @@ def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    random_color = (r, g, b)
-    return random_color
+    randomcolor = (r, g, b)
+    return randomcolor
 
 
-blaze_the_turtle.resizemode("auto")
-directions = [0, 45, 90, 135, 180, 225, 270]
+def draw_spirograph(size_of_gap):
+    for i in range(int(360 / size_of_gap)):
+        blaze_the_turtle.speed(i)
+        blaze_the_turtle.pensize(2)
+        blaze_the_turtle.color(random_color())
+        blaze_the_turtle.circle(100)
+        blaze_the_turtle.setheading(blaze_the_turtle.heading() + size_of_gap)
 
-for i in range(70):
-    blaze_the_turtle.speed(i)
-    blaze_the_turtle.pensize(i)
-    blaze_the_turtle.color(random_color())
-    blaze_the_turtle.forward(30)
-    blaze_the_turtle.setheading(random.choice(directions))
+
+draw_spirograph(7)
 
 my_screen = t.Screen()
 print(my_screen.canvheight)
