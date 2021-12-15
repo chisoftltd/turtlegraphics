@@ -10,15 +10,14 @@ blaze_the_turtle.shape("arrow")
 blaze_the_turtle.color("blue")
 blaze_the_turtle.resizemode("auto")
 
-blaze_the_turtle.setx(300)
-for i in range(5):
-    blaze_the_turtle.forward(100 * i)
+for _ in range(4):
+    blaze_the_turtle.forward(100)
     blaze_the_turtle.right(90)
-    blaze_the_turtle.forward(100 * i)
-    blaze_the_turtle.right(90)
-    blaze_the_turtle.forward(100 * i)
-    blaze_the_turtle.right(90)
-    blaze_the_turtle.forward(100 * i)
+    # blaze_the_turtle.forward(100 * i)
+    # blaze_the_turtle.right(90)
+    # blaze_the_turtle.forward(100 * i)
+    # blaze_the_turtle.right(90)
+    # blaze_the_turtle.forward(100 * i)
 
 
 
